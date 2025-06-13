@@ -199,14 +199,14 @@ if __name__ == '__main__':
 
     # plot the results
     u_title = 'PCDKL'
-    output_result_u_path = "/results/Fun_i_result_u" + str(tau) + ".jpg"
+    output_result_u_path = "Fun_i_result_u" + str(tau) + ".jpg"
     plot_tools.plot1d(x_u_train, u_train, x_test, u_test, u_mean, u_std,
                       xlim=[0, 1], ylim=[-1.5, 1.5], xlabel="x", ylabel="u", title=u_title, save_path=output_result_u_path)
 
     k_title = 'k_prediction'
-    output_result_k_path = "/results/Fun_i_result_k" + str(tau) + ".jpg"
+    output_result_k_path = "Fun_i_result_k" + str(tau) + ".jpg"
     plot_tools.plot_predictions(x_test, k_test, k_pred,
                                 xlim=[0, 1], ylim=[-1.5, 1.5], xlabel="x", ylabel="k", title=k_title, save_path=output_result_k_path)
 
-    output_loss_path = "/results/Fun_i_loss" + str(tau) + ".jpg"
+    output_loss_path = "Fun_i_loss" + str(tau) + ".jpg"
     plot_tools.plot_loss(losses, xlabel="", ylabel="", title="", save_path=output_loss_path)

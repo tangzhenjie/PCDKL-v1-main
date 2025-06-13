@@ -94,9 +94,9 @@ if __name__ == '__main__':
 
     # plot the results
     title = f'PCDKL'
-    output_result_path = "/results/Function_R_result"+str(tau) + ".jpg"
+    output_result_path = "Function_R_result"+str(tau) + ".jpg"
     plot_tools.plot1d(x_train, u_train, x_test, u_test, u_mean, u_std,
                       xlim=[-1, 1], ylim=[-3, 3], xlabel="x", ylabel="u", title=title, save_path=output_result_path)
 
-    output_loss_path = "/results/Function_R_loss"+str(tau) + ".jpg"
+    output_loss_path = "Function_R_loss"+str(tau) + ".jpg"
     plot_tools.plot_loss(losses, xlabel="", ylabel="", title="", xlim=[-1, 20], xticks=[0, 5, 10, 15, 20], save_path=output_loss_path)

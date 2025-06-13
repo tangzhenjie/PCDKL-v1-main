@@ -149,17 +149,17 @@ if __name__ == '__main__':
     x_co = x_test[:, 1].reshape(50, 50)
     y_co = x_test[:, 0].reshape(50, 50)
 
-    output_mean_path = "/results/mean" + str(tau) + ".jpg"
+    output_mean_path = "mean" + str(tau) + ".jpg"
     plot_tools.plot2d(x_co, y_co, u_mean, xlim=[-1.0, 1.0], ylim=[-1.0, 1.0], xticks_num=5, yticks_num=5,
                       title="Mean-" + u_title, bar_ticks=[1.0, 0.5, 0.0, -0.5, -1.0], save_path=output_mean_path)
 
-    output_error_path = "/results/error" + str(tau) + ".jpg"
+    output_error_path = "error" + str(tau) + ".jpg"
     plot_tools.plot2d(x_co, y_co, error_u, xlim=[-1.0, 1.0], ylim=[-1.0, 1.0], xticks_num=5, yticks_num=5,
                       title="Error",  bar_ticks=[0.12, 0.09, 0.06, 0.03], save_path=output_error_path)
 
-    output_2stds_path = "/results/2stds" + str(tau) + ".jpg"
+    output_2stds_path = "2stds" + str(tau) + ".jpg"
     plot_tools.plot2d(x_co, y_co, std_u_2, xlim=[-1.0, 1.0], ylim=[-1.0, 1.0], xticks_num=5, yticks_num=5,
                       title="2stds", bar_ticks=[0.108, 0.096, 0.084, 0.072], save_path=output_2stds_path)
 
-    output_loss_path = "/results/loss" + str(tau) + ".jpg"
+    output_loss_path = "loss" + str(tau) + ".jpg"
     plot_tools.plot_loss(losses, xlabel="", ylabel="", title="", save_path=output_loss_path)

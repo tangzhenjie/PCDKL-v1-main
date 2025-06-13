@@ -145,9 +145,9 @@ if __name__ == '__main__':
 
     # plot the results
     u_title = 'PCDKL'
-    output_result_path = "/results/result" + str(tau) + ".jpg"
+    output_result_path = "result" + str(tau) + ".jpg"
     plot_tools.plot1d(x_u_train, u_train, x_test, u_test, u_mean, u_std,
                       xlim=[-0.7, 0.7], ylim=[-1.5, 1.5], xlabel="x", ylabel="u", title=u_title, save_path=output_result_path)
 
-    output_loss_path = "/results/loss" + str(tau) + ".jpg"
+    output_loss_path = "loss" + str(tau) + ".jpg"
     plot_tools.plot_loss(losses, xlabel="", ylabel="", title="", save_path=output_loss_path)

@@ -207,19 +207,19 @@ if __name__ == '__main__':
 
     # plot the results
     u1_title = 'PCDKL'
-    output_u1_path = "/results/result_u1" + str(tau) + ".jpg"
+    output_u1_path = "result_u1" + str(tau) + ".jpg"
     plot_tools.plot1d(x_u1_train, u1_train, x_test, u1_test, u1_mean, u1_std,
                       xlim=[0.0, 10.0], ylim=[0.0, 1.4], xlabel="", ylabel="", title=u1_title, save_path=output_u1_path)
 
     u2_title = 'PCDKL'
-    output_u2_path = "/results/result_u2" + str(tau) + ".jpg"
+    output_u2_path = "result_u2" + str(tau) + ".jpg"
     plot_tools.plot1d(x_u2_train, u2_train, x_test, u2_test, u2_mean, u2_std,
                       xlim=[0.0, 10.0], ylim=[-1.5, 1.5], xlabel="", ylabel="", title=u2_title, save_path=output_u2_path)
 
     u3_title = 'PCDKL'
-    output_u3_path = "/results/result_u3" + str(tau) + ".jpg"
+    output_u3_path = "result_u3" + str(tau) + ".jpg"
     plot_tools.plot1d(x_u3_train, u3_train, x_test, u3_test, u3_mean, u3_std,
                       xlim=[0.0, 10.0], ylim=[-1.5, 1.5], xlabel="", ylabel="", title=u3_title, save_path=output_u3_path)
 
-    output_loss_path = "/results/loss" + str(tau) + ".jpg"
+    output_loss_path = "loss" + str(tau) + ".jpg"
     plot_tools.plot_loss(losses, xlabel="", ylabel="", title="", save_path=output_loss_path)
